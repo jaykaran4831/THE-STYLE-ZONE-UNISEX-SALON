@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Style Zone Unisex Salon | Hair, Beauty &amp; Makeup in Chhindwara</title>
+<meta name="description" content="Unisex salon in Chhindwara, opposite the Adivasi Museum. Haircuts, colour, keratin, smoothening, facials, waxing &amp; bridal makeup under one roof. Call or WhatsApp to book.">
+<meta name="theme-color" content="#AE1350">
+<meta property="og:title" content="The Style Zone Unisex Salon | Chhindwara">
+<meta property="og:description" content="Hair, beauty &amp; makeup under one roof — opposite the Adivasi Museum, Chhindwara. Open 9 AM–10 PM, every day.">
+<meta property="og:image" content="https://i.ibb.co/gph9BzK/file-0000000004708211bc34d2705eaff6d0.png">
+<meta property="og:type" content="business.business">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23AE1350'/%3E%3Ccircle cx='50' cy='50' r='48' fill='none' stroke='%23B4873A' stroke-width='3'/%3E%3Ctext x='50' y='67' font-family='Georgia,serif' font-size='52' fill='%23F4DEE1' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  /* ===== Tokens ===== */
+  :root{
+    --paper:#FBF2EA;
+    --paper-tint:#F4DEE1;
+    --ink:#1F1319;
+    --ink-soft:#4A3540;
+    --magenta:#AE1350;
+    --magenta-deep:#7E0E3B;
+    --gold:#B4873A;
+    --line: rgba(31,19,25,.14);
+    --line-soft: rgba(251,242,234,.22);
+    --shadow: 0 18px 40px -22px rgba(31,19,25,.35);
+    --radius: 18px;
+    --wrap: 1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Outfit',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15;margin:0;color:var(--ink);}
+  p{margin:0;}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px;}
+  section{scroll-margin-top:88px;}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+  .eyebrow{
+    font-size:.78rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--magenta-deep);
+    font-weight:600;
+  }
+  section .eyebrow{display:block;margin-bottom:10px;}
+
+  /* ===== Buttons ===== */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    padding:14px 26px;
+    border-radius:999px;
+    font-family:'Outfit',sans-serif;
+    font-weight:600;
+    font-size:.98rem;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn svg{width:18px;height:18px;flex:none;}
+  .btn-fill{background:var(--magenta);color:var(--paper);box-shadow:var(--shadow);}
+  .btn-fill:hover{transform:translateY(-2px);background:var(--magenta-deep);}
+  .btn-outline{background:transparent;color:var(--ink);border-color:var(--ink);}
+  .btn-outline:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper);}
+  .btn-gold{background:var(--gold);color:var(--ink);}
+  .btn-gold:hover{transform:translateY(-2px);}
+  .btn-sm{padding:9px 16px;font-size:.82rem;}
+  @media (prefers-reduced-motion:reduce){
+    .btn:hover{transform:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ===== Scallop divider (salon motif) ===== */
+  .scallop{display:block;width:100%;height:26px;line-height:0;}
+  .scallop svg{display:block;width:100%;height:100%;}
+
+  /* ===== Header ===== */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,242,234,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;padding:14px 28px;
+    max-width:var(--wrap);margin:0 auto;
+  }
+  .logo{display:flex;align-items:center;gap:10px;}
+  .logo-mark{width:40px;height:40px;flex:none;}
+  .logo-text{display:flex;flex-direction:column;line-height:1.1;}
+  .logo-text strong{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:700;}
+  .logo-text span{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta-deep);font-weight:600;}
+
+  nav.main-nav{display:flex;gap:28px;}
+  nav.main-nav a{font-size:.92rem;font-weight:500;color:var(--ink-soft);position:relative;padding:4px 0;}
+  nav.main-nav a:hover{color:var(--magenta-deep);}
+
+  .header-actions{display:flex;align-items:center;gap:10px;}
+  .icon-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 14px;border-radius:999px;
+    font-size:.85rem;font-weight:600;
+  }
+  .icon-btn svg{width:17px;height:17px;flex:none;}
+  .icon-btn.call{border:2px solid var(--ink);color:var(--ink);}
+  .icon-btn.wa{background:var(--magenta);color:var(--paper);}
+
+  .hamburger{
+    display:none;background:none;border:2px solid var(--ink);border-radius:10px;
+    width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer;
+  }
+  .hamburger span, .hamburger span::before, .hamburger span::after{
+    content:"";display:block;width:18px;height:2px;background:var(--ink);position:relative;
+    transition:transform .2s ease, opacity .2s ease;
+  }
+  .hamburger span::before{position:absolute;top:-6px;}
+  .hamburger span::after{position:absolute;top:6px;}
+
+  .mobile-nav{
+    display:none;flex-direction:column;gap:2px;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:10px 28px 18px;
+  }
+  .mobile-nav a{padding:12px 4px;font-weight:500;border-bottom:1px dashed var(--line);}
+  .mobile-nav.open{display:flex;}
+
+  /* ===== Hero ===== */
+  .hero{padding:64px 0 40px;position:relative;overflow:visible;}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;}
+  .hero h1{font-size:clamp(2.3rem,1.2rem + 3.2vw,3.6rem);font-weight:700;letter-spacing:-.01em;margin-bottom:22px;}
+  .hero-proof{font-size:.98rem;color:var(--ink-soft);margin-bottom:30px;}
+  .hero-proof strong{color:var(--magenta-deep);}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;}
+
+  .hero-visual{position:relative;}
+  .hero-frame{
+    border-radius:26px;overflow:hidden;box-shadow:var(--shadow);
+    border:6px solid var(--paper);
+    outline:1px solid var(--line);
+    aspect-ratio:4/5;
+  }
+  .hero-frame img{width:100%;height:100%;object-fit:cover;}
+
+  .badge-stamp{
+    position:absolute;
+    width:150px;height:150px;
+    left:-38px;bottom:-46px;
+    transform:rotate(-11deg);
+    filter:drop-shadow(0 12px 18px rgba(31,19,25,.3));
+    z-index:6;
+  }
+
+  /* ===== Trust strip ===== */
+  .trust{background:var(--paper-tint);padding:52px 0 46px;}
+  .trust-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:28px;
+    padding-left:70px;
+  }
+  .trust-item strong{display:block;font-family:'Playfair Display',serif;font-size:2rem;color:var(--magenta-deep);}
+  .trust-item span{font-size:.86rem;color:var(--ink-soft);}
+
+  /* ===== Section heading pattern ===== */
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head h2{font-size:clamp(1.7rem,1.2rem + 1.6vw,2.5rem);font-weight:700;}
+  .section-head p{margin-top:12px;color:var(--ink-soft);font-size:1.02rem;}
+
+  /* ===== Services (bento) ===== */
+  .services{padding:76px 0 66px;}
+  .services-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;}
+  .svc-card{
+    background:var(--paper-tint);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px;
+    display:flex;flex-direction:column;gap:14px;
+    grid-column:span 3;
+  }
+  .svc-card.span-4{grid-column:span 4;}
+  .svc-card.span-2{grid-column:span 2;}
+  .svc-card.span-6{grid-column:span 6;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:26px;}
+  .svc-icon{width:46px;height:46px;flex:none;color:var(--magenta);}
+  .svc-icon svg{width:100%;height:100%;}
+  .svc-card h3{font-size:1.18rem;font-weight:700;}
+  .svc-card p.desc{color:var(--ink-soft);font-size:.94rem;flex:1;}
+  .svc-price{font-weight:700;color:var(--magenta-deep);font-family:'Outfit',sans-serif;font-size:.95rem;}
+  .svc-card .btn{align-self:flex-start;}
+  .svc-card.span-6 .btn{align-self:center;}
+  .svc-card.span-6 .svc-body{display:flex;flex-direction:column;gap:6px;}
+
+  /* ===== About ===== */
+  .about{padding:70px 0 78px;}
+  .about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start;}
+  .avatar{
+    width:96px;height:96px;border-radius:50%;
+    background:var(--magenta);color:var(--paper);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;
+    border:3px solid var(--gold);
+    margin-bottom:18px;
+  }
+  .about-owner strong{display:block;font-family:'Playfair Display',serif;font-size:1.2rem;}
+  .about-owner span{font-size:.85rem;color:var(--ink-soft);}
+  .about-text p{margin-bottom:16px;color:var(--ink-soft);font-size:1.02rem;}
+  .about-text p:first-of-type{
+    font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--ink);line-height:1.5;
+  }
+  .diff-list{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;}
+  .diff-list li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--ink-soft);}
+  .diff-list svg{width:18px;height:18px;flex:none;color:var(--magenta);margin-top:2px;}
+
+  /* ===== Gallery ===== */
+  .gallery{padding:70px 0 76px;}
+  .gallery-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px;
+  }
+  .gallery-grid figure{margin:0;border-radius:14px;overflow:hidden;position:relative;background:var(--paper-tint);}
+  .gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+  .gallery-grid a:hover img{transform:scale(1.06);}
+  .gallery-grid .g1{grid-column:span 2;grid-row:span 2;}
+  .gallery-grid .g5{grid-row:span 2;}
+  .gallery-grid figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:10px 12px 8px;
+    font-size:.72rem;letter-spacing:.03em;color:var(--paper);
+    background:linear-gradient(to top, rgba(31,19,25,.72), transparent);
+  }
+
+  /* ===== Testimonials ===== */
+  .testimonials{background:var(--paper-tint);padding:74px 0;}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .t-card{background:var(--paper);border-radius:var(--radius);padding:28px;border:1px solid var(--line);}
+  .t-card .stars{display:flex;gap:3px;margin-bottom:14px;}
+  .t-card .stars svg{width:16px;height:16px;color:var(--gold);}
+  .t-card p{font-size:.98rem;color:var(--ink-soft);margin-bottom:18px;}
+  .t-who strong{display:block;font-size:.92rem;}
+  .t-who span{font-size:.8rem;color:var(--magenta-deep);}
+
+  /* ===== Pricing ===== */
+  .pricing{padding:76px 0;}
+  .price-cats{display:grid;grid-template-columns:1fr 1fr;gap:20px 48px;}
+  .price-cat{border-top:2px solid var(--ink);padding-top:14px;margin-bottom:8px;break-inside:avoid;}
+  .price-cat h3{font-size:1.02rem;font-weight:700;margin-bottom:6px;letter-spacing:.01em;}
+  .price-list li{
+    display:flex;justify-content:space-between;gap:14px;
+    padding:9px 0;border-bottom:1px dashed var(--line);
+    font-size:.9rem;
+  }
+  .price-list li .name{color:var(--ink-soft);}
+  .price-list li .amt{font-weight:700;color:var(--magenta-deep);white-space:nowrap;}
+  .price-note{margin-top:26px;font-size:.85rem;color:var(--ink-soft);font-style:italic;}
+
+  /* ===== Contact ===== */
+  .contact{padding:74px 0 60px;}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;}
+  .map-embed{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);}
+  .map-embed iframe{width:100%;height:320px;border:0;display:block;}
+  .contact-methods{display:flex;flex-direction:column;gap:14px;margin:22px 0 26px;}
+  .contact-methods a{
+    display:flex;align-items:center;gap:12px;
+    padding:14px 16px;border:1px solid var(--line);border-radius:14px;
+    font-size:.94rem;font-weight:500;
+  }
+  .contact-methods a:hover{border-color:var(--magenta);}
+  .contact-methods svg{width:20px;height:20px;flex:none;color:var(--magenta);}
+  .hours-table{width:100%;border-collapse:collapse;margin-top:8px;}
+  .hours-table td{padding:8px 4px;font-size:.9rem;border-bottom:1px dashed var(--line);}
+  .hours-table td:first-child{color:var(--ink-soft);}
+  .hours-table td:last-child{text-align:right;font-weight:600;}
+  .hours-table tr:nth-child(odd){background:rgba(174,19,80,.04);}
+
+  /* ===== Footer ===== */
+  footer.site{background:var(--ink);color:var(--paper);padding:56px 0 26px;}
+  .footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  .footer-brand strong{display:block;font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:8px;}
+  .footer-brand p{color:rgba(251,242,234,.65);font-size:.92rem;margin-bottom:20px;}
+  footer.site h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+  footer.site .flinks a{display:block;padding:6px 0;font-size:.92rem;color:rgba(251,242,234,.82);}
+  footer.site .flinks a:hover{color:var(--gold);}
+  .footer-bottom{
+    border-top:1px solid var(--line-soft);padding-top:22px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+    font-size:.8rem;color:rgba(251,242,234,.55);
+  }
+  .credit{font-size:.68rem;letter-spacing:.02em;color:rgba(251,242,234,.32);text-transform:lowercase;width:100%;text-align:center;margin-top:14px;}
+
+  /* ===== Sticky mobile CTA bar ===== */
+  .sticky-cta{
+    display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    grid-template-columns:1fr 1fr;
+    box-shadow:0 -8px 24px rgba(31,19,25,.18);
+  }
+  .sticky-cta a{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:15px 10px;font-weight:700;font-size:.92rem;
+  }
+  .sticky-cta a svg{width:18px;height:18px;}
+  .sticky-cta .call{background:var(--ink);color:var(--paper);}
+  .sticky-cta .wa{background:var(--magenta);color:var(--paper);}
+
+  /* ===================== RESPONSIVE ===================== */
+  @media (max-width:1080px){
+    .trust-grid{padding-left:0;grid-template-columns:repeat(2,1fr);}
+    .price-cats{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr 1fr;}
+  }
+
+  @media (max-width:820px){
+    nav.main-nav{display:none;}
+    .header-actions .icon-btn.call span,
+    .header-actions .icon-btn.wa span{display:none;}
+    .hamburger{display:flex;}
+    .hero .wrap{grid-template-columns:1fr;gap:44px;}
+    .hero-visual{order:-1;max-width:420px;margin:0 auto;}
+    .badge-stamp{width:120px;height:120px;left:-16px;bottom:-30px;}
+    .about .wrap{grid-template-columns:1fr;gap:34px;}
+    .gallery-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:120px;}
+    .t-grid{grid-template-columns:1fr;}
+    .contact .wrap{grid-template-columns:1fr;gap:36px;}
+    .footer-top{grid-template-columns:1fr;}
+  }
+
+  @media (max-width:520px){
+    .wrap{padding:0 20px;}
+    .header-row{padding:12px 20px;}
+    .hero{padding:40px 0 34px;}
+    .hero-ctas .btn{flex:1;}
+    .services-grid{grid-template-columns:1fr;}
+    .svc-card, .svc-card.span-2, .svc-card.span-3, .svc-card.span-4, .svc-card.span-6{grid-column:span 1;}
+    .svc-card.span-6{grid-template-columns:1fr;text-align:left;}
+    .diff-list{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px;}
+    .gallery-grid .g1{grid-column:span 2;grid-row:span 1;}
+    .trust-grid{grid-template-columns:1fr 1fr;gap:22px;}
+    .sticky-cta{display:grid;}
+    body{padding-bottom:58px;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .gallery-grid img{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="visually-hidden">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site">
+  <div class="header-row">
+    <a href="#top" class="logo" aria-label="The Style Zone home">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="var(--magenta)"/>
+        <circle cx="50" cy="50" r="47" fill="none" stroke="var(--gold)" stroke-width="2.5"/>
+        <text x="50" y="66" text-anchor="middle" font-family="Playfair Display, serif" font-size="46" fill="var(--paper)">S</text>
+      </svg>
+      <span class="logo-text"><strong>The Style Zone</strong><span>Unisex Salon</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn call" href="tel:+918305500172">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call</span>
+      </a>
+      <a class="icon-btn wa" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20an%20appointment%20at%20The%20Style%20Zone%20Unisex%20Salon." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.47-.01a.9.9 0 0 0-.65.31c-.23.24-.86.84-.86 2.05s.88 2.38 1 2.54c.12.16 1.73 2.65 4.2 3.71.59.25 1.05.4 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<div id="top"></div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Chhindwara &middot; Opp. Adivasi Museum</span>
+      <h1>Hair, skin &amp; bridal beauty for every walk-in — styled with premium care, right in the heart of Chhindwara.</h1>
+      <p class="hero-proof"><strong>8+ years</strong> in Chhindwara &middot; <strong>40+ services</strong> under one roof &middot; open till <strong>10&nbsp;PM</strong>, all 7 days</p>
+      <div class="hero-ctas">
+        <a class="btn btn-fill" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20an%20appointment%20at%20The%20Style%20Zone%20Unisex%20Salon." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.56 14.13c-.21.58-1.21 1.12-1.68 1.19-.42.06-.96.09-1.55-.1a15.4 15.4 0 0 1-1.4-.52c-2.47-1.06-4.08-3.55-4.2-3.71-.12-.16-1-1.33-1-2.54s.63-1.81.86-2.05c.23-.24.5-.3.65-.3.16 0 .32 0 .46.01.15 0 .35-.06.55.42.2.5.7 1.72.76 1.84.06.12.1.27.02.43-.09.16-.13.26-.25.41-.12.14-.26.32-.37.43-.13.12-.25.26-.11.5.14.25.64 1.05 1.37 1.71.95.84 1.74 1.1 1.99 1.22.25.12.4.1.54-.06.14-.17.62-.73.78-.97.17-.25.33-.21.56-.13.22.09 1.44.69 1.69.81.25.13.41.19.47.29.07.11.07.61-.14 1.19z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a class="btn btn-outline" href="tel:+918305500172">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 83055 00172
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <img src="https://i.ibb.co/gph9BzK/file-0000000004708211bc34d2705eaff6d0.png" alt="The Style Zone Unisex Salon storefront in Chhindwara" width="800" height="1000">
+      </div>
+      <svg class="badge-stamp" viewBox="0 0 160 160" aria-hidden="true">
+        <defs>
+          <path id="badgeCircle" d="M 80,80 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"/>
+        </defs>
+        <circle cx="80" cy="80" r="78" fill="var(--magenta)"/>
+        <circle cx="80" cy="80" r="78" fill="none" stroke="var(--gold)" stroke-width="2"/>
+        <circle cx="80" cy="80" r="60" fill="none" stroke="var(--paper)" stroke-width="1" stroke-dasharray="2 5"/>
+        <text font-size="11.5" letter-spacing="3" fill="var(--paper)">
+          <textPath href="#badgeCircle" startOffset="0%">TRUSTED IN CHHINDWARA &#8226; SINCE 2017 &#8226; </textPath>
+        </text>
+        <text x="80" y="76" text-anchor="middle" font-family="Playfair Display, serif" font-size="32" font-weight="700" fill="var(--paper)">8+</text>
+        <text x="80" y="97" text-anchor="middle" font-family="Outfit, sans-serif" font-size="10.5" letter-spacing="2" fill="var(--gold)">YEARS</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 400 26" preserveAspectRatio="none"><defs><pattern id="sc1" x="0" y="0" width="40" height="26" patternUnits="userSpaceOnUse"><circle cx="20" cy="0" r="15" fill="var(--paper-tint)"/></pattern></defs><rect width="400" height="26" fill="url(#sc1)"/></svg>
+</div>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item"><strong>8&ndash;10 Yrs</strong><span>Serving Chhindwara</span></div>
+      <div class="trust-item"><strong>40+</strong><span>Services under one roof</span></div>
+      <div class="trust-item"><strong>10 PM</strong><span>Open every night, all week</span></div>
+      <div class="trust-item"><strong>L&rsquo;Or&eacute;al</strong><span>Professional products used</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 400 26" preserveAspectRatio="none"><defs><pattern id="sc2" x="0" y="0" width="40" height="26" patternUnits="userSpaceOnUse"><circle cx="20" cy="26" r="15" fill="var(--paper)"/></pattern></defs><rect width="400" height="26" fill="var(--paper-tint)"/><rect width="400" height="26" fill="url(#sc2)"/></svg>
+</div>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Everything for hair, skin &amp; a finished look</h2>
+      <p>Pick a service and message us directly — we'll confirm timing and give you an exact price on WhatsApp.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="svc-card span-4">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg></div>
+        <h3>Hair Cut &amp; Styling</h3>
+        <p class="desc">Precision cuts and blow-dry styling for men and women, finished exactly the way you asked for.</p>
+        <p class="svc-price">Men &#8377;150 &middot; Women &#8377;450 (with wash)</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20a%20Hair%20Cut%20%26%20Styling%20appointment%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Book on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-2">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 4-6 7-6 10a6 6 0 0 0 12 0c0-3-2-6-6-10z"/></svg></div>
+        <h3>Colour &amp; Highlights</h3>
+        <p class="desc">Majirel colour, foil highlights and global highlights.</p>
+        <p class="svc-price">From &#8377;500</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Hair%20Colour%20%26%20Highlights%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Ask on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-3">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-6 6-9 9-9s6 3 9 9c-3 6-6 9-9 9s-6-3-9-9z"/><path d="M3 12h18"/></svg></div>
+        <h3>Keratin, Smoothening &amp; X-Tenso</h3>
+        <p class="desc">Frizz-control and texture treatments — from a quick blow-dry smoothening to a full Keratin.</p>
+        <p class="svc-price">From &#8377;800</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Keratin%20%26%20Smoothening%20treatments%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Ask on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-3">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Hair Spa &amp; Scalp Treatments</h3>
+        <p class="desc">L&rsquo;Or&eacute;al Hair Rituals, Pro Fiber, Smart Bond and anti-dandruff scalp care.</p>
+        <p class="svc-price">From &#8377;500</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20a%20Hair%20Spa%20treatment%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Book on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-2">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c2 3 5 5.5 5 9.5A5 5 0 0 1 7 11.5C7 7.5 10 5 12 2z"/></svg></div>
+        <h3>Facials &amp; Clean-ups</h3>
+        <p class="desc">Gold Ojas, Diamond Tejas, Shahnaz &amp; O3+ whitening facials.</p>
+        <p class="svc-price">From &#8377;350</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20a%20Facial%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Book on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-2">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="6" rx="2"/><path d="M4 12h16"/></svg></div>
+        <h3>Waxing &amp; Bleach</h3>
+        <p class="desc">Full-body waxing and bleach, done hygienically start to finish.</p>
+        <p class="svc-price">From &#8377;50</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20a%20Waxing%20appointment%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Book on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-2">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6M9 6h6M7 21c0-4 2-6 5-6s5 2 5 6"/></svg></div>
+        <h3>Head Massage</h3>
+        <p class="desc">A relaxing champi for men &amp; women.</p>
+        <p class="svc-price">Men &#8377;200 &middot; Women &#8377;250</p>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20a%20Head%20Massage%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Book on WhatsApp</a>
+      </article>
+
+      <article class="svc-card span-6">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c2-6 5-9 8-9s6 3 8 9"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <div class="svc-body">
+          <h3>Bridal &amp; Party Makeup</h3>
+          <p class="desc">From simple eye makeup to a full bridal look with hair styling and saree draping.</p>
+          <p class="svc-price">From &#8377;500 &middot; Bridal packages up to &#8377;3000</p>
+        </div>
+        <a class="btn btn-gold btn-sm" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20enquire%20about%20Bridal%20%26%20Party%20Makeup%20at%20The%20Style%20Zone." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 400 26" preserveAspectRatio="none"><defs><pattern id="sc3" x="0" y="0" width="40" height="26" patternUnits="userSpaceOnUse"><circle cx="20" cy="0" r="15" fill="var(--paper-tint)"/></pattern></defs><rect width="400" height="26" fill="url(#sc3)"/></svg>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="about" style="background:var(--paper-tint);">
+  <div class="wrap">
+    <div class="about-owner">
+      <div class="avatar">RB</div>
+      <strong>Rahul Bandewar ji</strong>
+      <span>Owner &amp; Lead Stylist</span>
+
+      <ul class="diff-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> One roof for hair, skin, waxing &amp; bridal makeup</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> L&rsquo;Or&eacute;al Professional products &mdash; Majirel, Hair Rituals, Smart Bond</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Trained unisex styling team for men &amp; women</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Easy to find &mdash; directly opposite the Adivasi Museum</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Open 9&nbsp;AM&ndash;10&nbsp;PM, every single day</li>
+      </ul>
+    </div>
+
+    <div class="about-text">
+      <span class="eyebrow">Our Story</span>
+      <p>Back in 2017, with my elder brother's support, I set up two chairs and a single mirror near the Adivasi Museum — today The Style Zone has grown into a full unisex studio for hair, skin and bridal beauty.</p>
+      <p>What hasn't changed is how we treat every client. Whether you're a student in for a &#8377;150 haircut or a bride planning her big day, you get the same attention, clean tools and proper professional products — not shortcuts.</p>
+      <p>We keep learning the newer techniques — Keratin, X-Tenso, Smart Bond — so Chhindwara doesn't have to travel to a bigger city for salon-quality treatments. That's the whole idea behind The Style Zone: premium care, close to home.</p>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 400 26" preserveAspectRatio="none"><defs><pattern id="sc4" x="0" y="0" width="40" height="26" patternUnits="userSpaceOnUse"><circle cx="20" cy="26" r="15" fill="var(--paper)"/></pattern></defs><rect width="400" height="26" fill="var(--paper-tint)"/><rect width="400" height="26" fill="url(#sc4)"/></svg>
+</div>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery" class="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>A look inside The Style Zone</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="g1"><a href="https://i.ibb.co/vvkfR7BS/Screenshot-2026-08-12-223100.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/vvkfR7BS/Screenshot-2026-08-12-223100.png" alt="Inside The Style Zone Unisex Salon" loading="lazy" width="600" height="600"><figcaption>Inside the salon</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/tTzFXSfC/Screenshot-2026-08-12-223118.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/tTzFXSfC/Screenshot-2026-08-12-223118.png" alt="Styling session at The Style Zone" loading="lazy" width="400" height="300"><figcaption>Styling in progress</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/3mWsxSKf/Screenshot-2026-08-12-223156.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/3mWsxSKf/Screenshot-2026-08-12-223156.png" alt="Service rate list at The Style Zone" loading="lazy" width="400" height="300"><figcaption>Transparent pricing on display</figcaption></a></figure>
+      <figure class="g5"><a href="https://i.ibb.co/RpmM7H5H/Screenshot-2026-08-12-223224.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/RpmM7H5H/Screenshot-2026-08-12-223224.png" alt="Hair colour session at The Style Zone" loading="lazy" width="400" height="600"><figcaption>Colour &amp; highlights</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/d4cCryLS/Screenshot-2026-08-12-223253.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/d4cCryLS/Screenshot-2026-08-12-223253.png" alt="Facial and skin care corner at The Style Zone" loading="lazy" width="400" height="300"><figcaption>Skin &amp; facial care</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/r2BtSqVD/Screenshot-2026-08-12-223312.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/r2BtSqVD/Screenshot-2026-08-12-223312.png" alt="Bridal makeup styling at The Style Zone" loading="lazy" width="400" height="300"><figcaption>Bridal &amp; party makeup</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/6R075Bqp/Screenshot-2026-08-12-223333.png" target="_blank" rel="noopener"><img src="https://i.ibb.co/6R075Bqp/Screenshot-2026-08-12-223333.png" alt="Team at work at The Style Zone" loading="lazy" width="400" height="300"><figcaption>Our team at work</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/NgG5b3ML/IMG20260703190752-jpg.jpg" target="_blank" rel="noopener"><img src="https://i.ibb.co/NgG5b3ML/IMG20260703190752-jpg.jpg" alt="A finished look from The Style Zone" loading="lazy" width="400" height="300"><figcaption>A finished look</figcaption></a></figure>
+      <figure><a href="https://i.ibb.co/jZqFJtP2/Screenshot-2026-08-08-14-04-12-23-99c04817c0de5652397fc8b56c3b3817-jpg.jpg" target="_blank" rel="noopener"><img src="https://i.ibb.co/jZqFJtP2/Screenshot-2026-08-08-14-04-12-23-99c04817c0de5652397fc8b56c3b3817-jpg.jpg" alt="Treatment in progress at The Style Zone" loading="lazy" width="400" height="300"><figcaption>Treatment in progress</figcaption></a></figure>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 400 26" preserveAspectRatio="none"><defs><pattern id="sc5" x="0" y="0" width="40" height="26" patternUnits="userSpaceOnUse"><circle cx="20" cy="0" r="15" fill="var(--paper-tint)"/></pattern></defs><rect width="400" height="26" fill="url(#sc5)"/></svg>
+</div>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Testimonials</span>
+      <h2>What Chhindwara says</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+        </div>
+        <p>Been going to Rahul bhaiya for my haircuts for 3 years now, never had a bad one. Got my hair coloured last month too — so many compliments since!</p>
+        <div class="t-who"><strong>Priya M.</strong><span>Gole Gunj, Chhindwara</span></div>
+      </div>
+      <div class="t-card">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+        </div>
+        <p>Got my bridal makeup and saree draping done here. We reached late because the baraat got delayed, but the team adjusted the whole schedule for me. Looked amazing in every photo.</p>
+        <div class="t-who"><strong>Anjali R.</strong><span>Fawwara Chowk, Chhindwara</span></div>
+      </div>
+      <div class="t-card">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9.5 9 9"/></svg>
+        </div>
+        <p>It's genuinely a unisex salon — I take my haircut here and my wife gets her facials done in the next chair. Good head massage too, worth the &#8377;200.</p>
+        <div class="t-who"><strong>Rohit S.</strong><span>Mansarovar Complex, Chhindwara</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section id="pricing" class="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Transparent, upfront pricing</h2>
+      <p>No surprises at the chair. Here's every service and its starting price — message us on WhatsApp for an exact quote.</p>
+    </div>
+
+    <div class="price-cats">
+      <div class="price-cat">
+        <h3>Hair Cut, Wash &amp; Style</h3>
+        <ul class="price-list">
+          <li><span class="name">Hair Cut &amp; Wash &mdash; Men</span><span class="amt">&#8377;150</span></li>
+          <li><span class="name">Hair Cut &amp; Wash &mdash; Women (with wash)</span><span class="amt">&#8377;450</span></li>
+          <li><span class="name">Shaving</span><span class="amt">&#8377;50</span></li>
+          <li><span class="name">Hair Wash &amp; Conditioning</span><span class="amt">&#8377;50</span></li>
+          <li><span class="name">Blow Dry / Styling &mdash; Men</span><span class="amt">&#8377;150+</span></li>
+          <li><span class="name">Blow Dry / Styling &mdash; Women</span><span class="amt">&#8377;250+</span></li>
+          <li><span class="name">Blow Dry + Wash</span><span class="amt">&#8377;250&ndash;400</span></li>
+          <li><span class="name">Head Massage &mdash; Men</span><span class="amt">&#8377;200</span></li>
+          <li><span class="name">Head Massage &mdash; Women</span><span class="amt">&#8377;250</span></li>
+        </ul>
+      </div>
+
+      <div class="price-cat">
+        <h3>Texture &amp; Treatments</h3>
+        <ul class="price-list">
+          <li><span class="name">Hair Smoothening (temporary)</span><span class="amt">&#8377;800+</span></li>
+          <li><span class="name">Ironing (temporary)</span><span class="amt">&#8377;200&ndash;350</span></li>
+          <li><span class="name">Ultimate Ironing</span><span class="amt">&#8377;1000</span></li>
+          <li><span class="name">Tongs</span><span class="amt">&#8377;500+</span></li>
+          <li><span class="name">X-Tenso</span><span class="amt">&#8377;1000&ndash;3000+</span></li>
+          <li><span class="name">Keratin</span><span class="amt">&#8377;3000+</span></li>
+          <li><span class="name">Hair Spa</span><span class="amt">&#8377;600+</span></li>
+          <li><span class="name">L&rsquo;Or&eacute;al Hair Rituals</span><span class="amt">&#8377;500+</span></li>
+          <li><span class="name">Pro Fiber</span><span class="amt">&#8377;1200</span></li>
+          <li><span class="name">Smart Bond</span><span class="amt">&#8377;1000</span></li>
+          <li><span class="name">Anti-Dandruff Treatment</span><span class="amt">&#8377;500</span></li>
+        </ul>
+      </div>
+
+      <div class="price-cat">
+        <h3>Colour &amp; Highlights</h3>
+        <ul class="price-list">
+          <li><span class="name">Hair Colour / Majirel</span><span class="amt">&#8377;500+</span></li>
+          <li><span class="name">Highlights</span><span class="amt">&#8377;700+</span></li>
+          <li><span class="name">Global Highlights</span><span class="amt">&#8377;1200+</span></li>
+          <li><span class="name">Per Foil</span><span class="amt">&#8377;150</span></li>
+          <li><span class="name">Per Foil, Pre-lightening + Colour</span><span class="amt">&#8377;700</span></li>
+        </ul>
+      </div>
+
+      <div class="price-cat">
+        <h3>Skin &amp; Facials</h3>
+        <ul class="price-list">
+          <li><span class="name">Basic Clean Up</span><span class="amt">&#8377;350</span></li>
+          <li><span class="name">D-Tox Clean Up</span><span class="amt">&#8377;500</span></li>
+          <li><span class="name">Clean Up with Exfoliation</span><span class="amt">&#8377;600</span></li>
+          <li><span class="name">Facial</span><span class="amt">&#8377;700&ndash;2000</span></li>
+          <li><span class="name">Gold Ojas Facial</span><span class="amt">&#8377;1400</span></li>
+          <li><span class="name">Diamond Tejas Facial</span><span class="amt">&#8377;1500</span></li>
+          <li><span class="name">Shahnaz Gold Facial</span><span class="amt">&#8377;1500</span></li>
+          <li><span class="name">Shahnaz Diamond Facial</span><span class="amt">&#8377;1600</span></li>
+          <li><span class="name">O3+ Facial Whitening</span><span class="amt">&#8377;2000</span></li>
+        </ul>
+      </div>
+
+      <div class="price-cat">
+        <h3>Waxing &amp; Bleach</h3>
+        <ul class="price-list">
+          <li><span class="name">Waxing &mdash; Upper Lip</span><span class="amt">&#8377;50</span></li>
+          <li><span class="name">Waxing &mdash; Full Face</span><span class="amt">&#8377;250</span></li>
+          <li><span class="name">Waxing &mdash; Under Arms</span><span class="amt">&#8377;100</span></li>
+          <li><span class="name">Waxing &mdash; Full Arms</span><span class="amt">&#8377;300</span></li>
+          <li><span class="name">Waxing &mdash; Full Legs</span><span class="amt">&#8377;500</span></li>
+          <li><span class="name">Waxing &mdash; Full Body</span><span class="amt">&#8377;2500</span></li>
+          <li><span class="name">Bleach &mdash; Upper Lip</span><span class="amt">&#8377;20</span></li>
+          <li><span class="name">Bleach &mdash; Full Face</span><span class="amt">&#8377;250</span></li>
+          <li><span class="name">Bleach &mdash; Under Arms</span><span class="amt">&#8377;100</span></li>
+        </ul>
+      </div>
+
+      <div class="price-cat">
+        <h3>Makeup</h3>
+        <ul class="price-list">
+          <li><span class="name">Eye Makeup</span><span class="amt">&#8377;500</span></li>
+          <li><span class="name">Eye Makeup + Hair Styling</span><span class="amt">&#8377;800</span></li>
+          <li><span class="name">Simple Makeup</span><span class="amt">&#8377;1200</span></li>
+          <li><span class="name">Party Makeup + Hair Styling</span><span class="amt">&#8377;1500</span></li>
+          <li><span class="name">Upstyle Party Makeup + Hair + Saree Draping</span><span class="amt">&#8377;2000</span></li>
+          <li><span class="name">Traditional Makeup + Hair + Saree Draping</span><span class="amt">&#8377;3000</span></li>
+          <li><span class="name">Groom Makeup + Hairstyle</span><span class="amt">&#8377;2000&ndash;2500</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note">Prices may vary with hair length, thickness and product used. Please confirm your exact price on a quick call or WhatsApp message before you visit.</p>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 400 26" preserveAspectRatio="none"><defs><pattern id="sc6" x="0" y="0" width="40" height="26" patternUnits="userSpaceOnUse"><circle cx="20" cy="0" r="15" fill="var(--paper-tint)"/></pattern></defs><rect width="400" height="26" fill="url(#sc6)"/></svg>
+</div>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="contact" style="background:var(--paper-tint);">
+  <div class="wrap">
+    <div class="contact-info">
+      <span class="eyebrow">Visit Us</span>
+      <h2>Find us opposite the Adivasi Museum</h2>
+
+      <div class="contact-methods">
+        <a href="tel:+918305500172">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 83055 00172
+        </a>
+        <a href="https://wa.me/918305500172?text=Hi%21%20I%20have%20a%20question%20about%20your%20services%20at%20The%20Style%20Zone." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+          WhatsApp us
+        </a>
+        <a href="https://maps.app.goo.gl/x2HLfaxSAKVDWaLU7" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          In front of Adivasi Museum, Chhindwara, Madhya Pradesh
+        </a>
+        <a href="https://www.instagram.com/the.style.zone_unisex.salon/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @the.style.zone_unisex.salon
+        </a>
+      </div>
+
+      <h3 style="font-size:1rem;margin-bottom:4px;">Opening Hours</h3>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Monday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+          <tr><td>Thursday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+          <tr><td>Friday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+          <tr><td>Sunday</td><td>9:00 AM &ndash; 10:00 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps?q=The%20Style%20Zone%20Unisex%20Salon%2C%20Adivasi%20Museum%2C%20Chhindwara%2C%20Madhya%20Pradesh&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Style Zone Unisex Salon location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <strong>The Style Zone Unisex Salon</strong>
+        <p>Professional Hair, Beauty &amp; Makeup Under One Roof &mdash; opposite the Adivasi Museum, Chhindwara.</p>
+        <a class="btn btn-fill" href="https://wa.me/918305500172?text=Hi%20Rahul%21%20I%20found%20The%20Style%20Zone%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="flinks">
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="flinks">
+        <h4>Get In Touch</h4>
+        <a href="tel:+918305500172">+91 83055 00172</a>
+        <a href="https://www.instagram.com/the.style.zone_unisex.salon/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://maps.app.goo.gl/x2HLfaxSAKVDWaLU7" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> The Style Zone Unisex Salon. All rights reserved.</span>
+      <span>In front of Adivasi Museum, Chhindwara, MP</span>
+    </div>
+    <p class="credit">built with &#10084;&#65039; by 21.coders</p>
+  </div>
+</footer>
+
+</main>
+
+<!-- ===================== STICKY MOBILE CTA ===================== -->
+<div class="sticky-cta">
+  <a class="call" href="tel:+918305500172">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a class="wa" href="https://wa.me/918305500172?text=Hi%21%20I%27d%20like%20to%20book%20an%20appointment%20at%20The%20Style%20Zone%20Unisex%20Salon." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  var mobileNav = document.getElementById('mobileNav');
+  hamburgerBtn.addEventListener('click', function () {
+    var isOpen = mobileNav.classList.toggle('open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  mobileNav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileNav.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
